@@ -20,4 +20,4 @@ if __name__ == '__main__':
     ps = pstats.Stats(profiler, stream=s).sort_stats('cumtime')
     ps.print_stats()
     with open("model/profile.txt", "w") as f:
-        f.write(s.getValue())
+        f.write(s.getvalue())
