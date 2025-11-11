@@ -9,7 +9,7 @@ def train_model():
     iris = load_iris()
     clf = RandomForestClassifier()
     clf.fit(iris.data, iris.target)
-    with open('modle/my_model.pkl',"wb") as f:
+    with open('model/my_model.pkl',"wb") as f:
         pickle.dump(clf, f)
 if __name__ == '__main__':
     profiler = cProfile.Profile()
